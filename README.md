@@ -41,9 +41,14 @@ Pour produire en France sans contrainte territoriale ni commerciale, les choix p
 - **Audio** : ACE-Step, YuE (Apache) ; voix Kokoro, Chatterbox, CosyVoice, Orpheus, Dia, Parler. On évite, en commercial, les poids MusicGen, F5-TTS, XTTS v2, Fish Speech.
 - **3D** : TRELLIS et TRELLIS.2 (MIT), Step1X-3D (Apache), TripoSG (MIT). On évite Hunyuan3D.
 
-## Le détail
+## Le dépôt
 
-Le tableau complet, par modalité, avec licence exacte, autorisation commerciale, risque territorial, faisabilité locale et source primaire : **[CATALOGUE-LICENCES-IA-2026.md](CATALOGUE-LICENCES-IA-2026.md)**.
+Quatre documents, une même enquête : ce que valent vraiment les modèles génératifs en 2026, ce qu'on a le droit d'en faire, et comment les amener à une qualité cinéma.
+
+- **[CATALOGUE-LICENCES-IA-2026.md](CATALOGUE-LICENCES-IA-2026.md)** — le tableau complet des licences (image, vidéo, audio, 3D, runtimes), par modalité, avec autorisation commerciale, risque territorial, faisabilité locale et source primaire. Plus l'AI Act et les CGU des plateformes cloud.
+- **[ETAT-MODELES-GENERATIFS-2026.md](ETAT-MODELES-GENERATIFS-2026.md)** — l'état des modèles actuels (Nano Banana, GPT Image 2, Seedream, Ideogram, Reve, Midjourney, Flux 2, Krea 2, et côté vidéo Veo, Kling, Sora, Marey, Luma Ray3, Wan, LTX-2) : résolution native réelle, profondeur de bits, provenance, et une grille de lecture d'un projet.
+- **[QUALITE-TECHNIQUE-IMAGE-VIDEO-2026.md](QUALITE-TECHNIQUE-IMAGE-VIDEO-2026.md)** — la vérité technique : natif vs upscale, 8-bit vs 16-bit, le goulet du VAE, et la latitude d'étalonnage réelle (le chiffre qui tranche : ~1-2 stops sur une sortie IA 8-bit, contre 12-14 sur un RAW).
+- **[PIPELINE-STUDIO-SOLO-HYBRIDE.md](PIPELINE-STUDIO-SOLO-HYBRIDE.md)** — un workflow concret : filmer un acteur réel, le poser dans un décor génératif, le relighter, assembler et restyler, avec des outils publics et une flotte GPU grand public. Le studio à une personne.
 
 ## Méthode et limites
 
