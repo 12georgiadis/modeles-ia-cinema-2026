@@ -105,4 +105,4 @@ Un cinéaste seul peut filmer un acteur réel, le placer dans un monde générat
 
 ---
 
-*Sources : lightcraft.pro/jetset (specs + tiers), worldlabs.ai/Marble (export + pricing), beeble.ai/beeble-studio + CineD (SwitchLight 3.0, on-prem, PBR 16-bit EXR), runcomfy/VACE Wan (video-to-video ComfyUI), Runway Gen-4.5. Outils et prix à revérifier avant tout engagement.*
+*Sources : lightcraft.pro/jetset (specs + tiers), worldlabs.ai/Marble (export + pricing), beeble.ai/beeble-studio + CineD (SwitchLight 3.0, on-prem, PBR 16-bit EXR), runcomfy/VACE Wan (video-to-video ComfyUI), Runway Gen-4.5.*

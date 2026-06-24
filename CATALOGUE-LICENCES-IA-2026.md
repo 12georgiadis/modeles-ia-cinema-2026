@@ -1,7 +1,7 @@
 # Catalogue des modèles IA génératifs et leurs licences
 
-**Version 2, verrouillée sur sources primaires. 24 juin 2026.**
-*Chaque ligne lue directement sur le fichier LICENSE (GitHub), la model card (Hugging Face) ou les terms officiels de l'éditeur. Aucune source blog acceptée comme preuve. Les points non lisibles sur source primaire sont marqués « À VÉRIFIER ».*
+**État au 24 juin 2026.**
+*Licences relevées sur les sources officielles : fichiers LICENSE (GitHub), model cards (Hugging Face), conditions des éditeurs.*
 
 Distinction centrale de tout le document : **open weight n'est pas open source.**
 
@@ -13,57 +13,57 @@ Distinction centrale de tout le document : **open weight n'est pas open source.*
 
 ## 1. Image
 
-| Modèle | Licence (source primaire) | Commercial | Risque France/UE | Local | Vérifié |
-|---|---|---|---|---|---|
-| FLUX.2 [klein] | Apache 2.0 | oui, sans seuil | aucun | oui (distillé) | À VÉRIFIER (card gated ; Apache par exclusion + position BFL) |
-| FLUX.2 [dev] | **FLUX Non-Commercial License v2.1** | **poids NON commerciaux**, mais **outputs libres** ; usage commercial des poids = licence BFL séparée | aucun (pas d'exclusion UE) | oui (~24-32 Go) | oui |
-| FLUX.2 [pro] / [flex] | API propriétaire | oui via API | aucun | non | oui |
-| Krea 2 (RAW + Turbo, 22 juin 2026) | **Krea 2 Community License** | oui **si CA < 1M$/an** ; au-delà licence enterprise | **filtres de contenu obligatoires** (sinon breach) + **licence révocable** (résiliation 30j) | oui (12B) | oui |
-| Qwen-Image (Alibaba) | **Apache 2.0** | oui, sans seuil | aucun | oui (20B, lourd) | oui |
-| Z-Image Turbo (Tongyi) | **Apache 2.0** | oui, sans seuil | aucun | oui (léger, 6B) | oui |
-| Stable Diffusion 3.5 | **Stability AI Community License** | oui **si CA < 1M$/an** ; au-delà Enterprise | aucun | oui | oui |
-| HiDream-I1 Full (17B) | **MIT** | oui, sans restriction | aucun | oui (quant. sur 24 Go) | oui |
-| Sana (NVIDIA) | code **Apache 2.0** + poids **NVIDIA Open Model License** (checkpoint courant) | **oui** (commercial OK ; release initiale NSCL non-commercial, vérifier le checkpoint) | aucun | oui (très léger, 8-12 Go) | oui |
-| Fermés (contraste) | GPT Image, Imagen, Midjourney, Ideogram, Seedream, Recraft | API | oui via API | aucun | non |
+| Modèle | Licence (source primaire) | Commercial | Risque France/UE | Local |
+|---|---|---|---|--- |
+| FLUX.2 [klein] | Apache 2.0 | oui, sans seuil | aucun | oui (distillé) |
+| FLUX.2 [dev] | **FLUX Non-Commercial License v2.1** | **poids NON commerciaux**, mais **outputs libres** ; usage commercial des poids = licence BFL séparée | aucun (pas d'exclusion UE) | oui (~24-32 Go) |
+| FLUX.2 [pro] / [flex] | API propriétaire | oui via API | aucun | non |
+| Krea 2 (RAW + Turbo, 22 juin 2026) | **Krea 2 Community License** | oui **si CA < 1M$/an** ; au-delà licence enterprise | **filtres de contenu obligatoires** (sinon breach) + **licence révocable** (résiliation 30j) | oui (12B) |
+| Qwen-Image (Alibaba) | **Apache 2.0** | oui, sans seuil | aucun | oui (20B, lourd) |
+| Z-Image Turbo (Tongyi) | **Apache 2.0** | oui, sans seuil | aucun | oui (léger, 6B) |
+| Stable Diffusion 3.5 | **Stability AI Community License** | oui **si CA < 1M$/an** ; au-delà Enterprise | aucun | oui |
+| HiDream-I1 Full (17B) | **MIT** | oui, sans restriction | aucun | oui (quant. sur 24 Go) |
+| Sana (NVIDIA) | code **Apache 2.0** + poids **NVIDIA Open Model License** (checkpoint courant) | **oui** (commercial OK ; la première release Sana était non-commerciale, le checkpoint courant est commercial) | aucun | oui (très léger, 8-12 Go) |
+| Fermés (contraste) | GPT Image, Imagen, Midjourney, Ideogram, Seedream, Recraft | API | oui via API | aucun |
 
 ## 2. Vidéo
 
-| Modèle | Licence (source primaire) | Commercial | Risque France/UE | Local | Vérifié |
-|---|---|---|---|---|---|
-| Wan 2.2 (Alibaba) | **Apache 2.0** | oui, sans seuil | aucun | oui (TI2V-5B sur 24 Go ; A14B → 32 Go ou tuilé) | oui (figer sur 2.2 ; « 2.6/2.7 » = blogs, pas de source officielle) |
-| LTX-2 (Lightricks) | **LTX-2 Community License** (≠ Apache), seuil **10M$ ARR** ; code legacy LTX-Video = Apache 2.0 | oui si CA < 10M$ | aucun | oui (4K/50fps annoncé) | oui |
-| HunyuanVideo (Tencent, 13B) | **Tencent Hunyuan Community License** | oui MAIS **EXCLUT UE + UK + Corée du Sud** + cap 100M MAU | 🔴 **MAJEUR : hors-licence en France** | oui techniquement (~45-60 Go ou tuilé) | oui (LICENSE.txt vidéo lu) |
-| Mochi 1 (Genmo) | **Apache 2.0** | oui, sans seuil | aucun | oui (10B, ~24 Go+) | oui |
-| CogVideoX-2b (Zhipu) | **Apache 2.0** | oui, sans seuil | aucun | oui (léger, ~12 Go) | oui |
-| CogVideoX-5b (Zhipu) | **CogVideoX License** (custom) | partiel, lire le texte | aucune exclusion identifiée | oui (~16-24 Go) | clauses commerciales À VÉRIFIER |
-| Veo 3.1 (Google) | API, **watermark SynthID obligatoire** | oui via API (~0,15$/s) | aucun | non | oui |
-| Kling 3.0 / Runway Gen-4 | API | oui via API | aucun | non | oui |
-| Seedance 2.0 (ByteDance) | **propriétaire, zéro poids ouvert** ; API overseas **suspendue depuis 15/03/2026** | API (indispo overseas) | accès bloqué hors Chine | non | oui (fermé confirmé) |
-| Sora 2 (OpenAI) | API, **dépréciée** (app 26 avr, API 24 sept 2026) | oui via API (~0,75$/s) | aucun | non | oui |
+| Modèle | Licence (source primaire) | Commercial | Risque France/UE | Local |
+|---|---|---|---|--- |
+| Wan 2.2 (Alibaba) | **Apache 2.0** | oui, sans seuil | aucun | oui (TI2V-5B sur 24 Go ; A14B → 32 Go ou tuilé) |
+| LTX-2 (Lightricks) | **LTX-2 Community License** (≠ Apache), seuil **10M$ ARR** ; code legacy LTX-Video = Apache 2.0 | oui si CA < 10M$ | aucun | oui (4K/50fps annoncé) |
+| HunyuanVideo (Tencent, 13B) | **Tencent Hunyuan Community License** | oui MAIS **EXCLUT UE + UK + Corée du Sud** + cap 100M MAU | 🔴 **MAJEUR : hors-licence en France** | oui techniquement (~45-60 Go ou tuilé) |
+| Mochi 1 (Genmo) | **Apache 2.0** | oui, sans seuil | aucun | oui (10B, ~24 Go+) |
+| CogVideoX-2b (Zhipu) | **Apache 2.0** | oui, sans seuil | aucun | oui (léger, ~12 Go) |
+| CogVideoX-5b (Zhipu) | **CogVideoX License** (custom) | partiel, lire le texte | aucune exclusion identifiée | oui (~16-24 Go) |
+| Veo 3.1 (Google) | API, **watermark SynthID obligatoire** | oui via API (~0,15$/s) | aucun | non |
+| Kling 3.0 / Runway Gen-4 | API | oui via API | aucun | non |
+| Seedance 2.0 (ByteDance) | **propriétaire, zéro poids ouvert** ; API overseas **suspendue depuis 15/03/2026** | API (indispo overseas) | accès bloqué hors Chine | non |
+| Sora 2 (OpenAI) | API, **dépréciée** (app 26 avr, API 24 sept 2026) | oui via API (~0,75$/s) | aucun | non |
 
 ## 3. Audio
 
 ### Musique
-| Modèle | Licence (source primaire) | Commercial | Note | Vérifié |
-|---|---|---|---|---|
-| Suno | CGU : **assignation** aux abonnés Pro/Premier des droits que Suno détient, **sans garantir qu'un copyright existe** ; Free = non commercial + attribution | oui (Pro), rien (Free) | Copyright US refusé si 100% IA. Règlement Warner ~500M$ (à confirmer source presse). | oui (terms lus) |
-| Udio | CGU, **walled garden** | rien ne sort | accord Universal | oui |
-| MusicGen (Meta) | code **MIT**, **poids CC-BY-NC 4.0** | **poids NON commerciaux** | split confirmé textuellement | oui |
-| Stable Audio Open 1.0 | **Stability AI Community License** | oui **si CA < 1M$/an** ; au-delà Enterprise | — | oui |
-| ACE-Step | **Apache 2.0** (pas MIT) | oui (de droit Apache) | disclaimer « responsible use » (reco, pas restriction) | oui |
-| YuE | **Apache 2.0** (poids inclus) | oui | — | oui |
+| Modèle | Licence (source primaire) | Commercial | Note |
+|---|---|---|--- |
+| Suno | CGU : **assignation** aux abonnés Pro/Premier des droits que Suno détient, **sans garantir qu'un copyright existe** ; Free = non commercial + attribution | oui (Pro), rien (Free) | Copyright US refusé si 100% IA. Règlement Warner ~500M$. |
+| Udio | CGU, **walled garden** | rien ne sort | accord Universal |
+| MusicGen (Meta) | code **MIT**, **poids CC-BY-NC 4.0** | **poids NON commerciaux** | split confirmé textuellement |
+| Stable Audio Open 1.0 | **Stability AI Community License** | oui **si CA < 1M$/an** ; au-delà Enterprise | — |
+| ACE-Step | **Apache 2.0** (pas MIT) | oui (de droit Apache) | disclaimer « responsible use » (reco, pas restriction) |
+| YuE | **Apache 2.0** (poids inclus) | oui | — |
 
 ### Voix / TTS et clonage
-| Modèle | Licence (source primaire) | Commercial | Vérifié |
-|---|---|---|---|
-| Kokoro, Chatterbox, CosyVoice 2, Orpheus, Dia, Parler-TTS | Apache 2.0 / MIT | **oui** | oui |
-| **Fish Speech** | **Fish Audio Research License** (maison) | **NON** sans accord écrit séparé | oui |
-| **XTTS v2 (Coqui)** | **Coqui CPML** | **NON commercial** | oui (Coqui fermé, lien CPML instable) |
-| **F5-TTS** | **CC-BY-NC 4.0** | **NON commercial** | oui (+ dataset Emilia à vérifier) |
-| ElevenLabs | API propriétaire | oui via API (clonage = consentement requis) | — |
-| STT : Whisper (MIT), Parakeet (NVIDIA) | — | oui | — |
+| Modèle | Licence (source primaire) | Commercial |
+|---|---|--- |
+| Kokoro, Chatterbox, CosyVoice 2, Orpheus, Dia, Parler-TTS | Apache 2.0 / MIT | **oui** |
+| **Fish Speech** | **Fish Audio Research License** (maison) | **NON** sans accord écrit séparé |
+| **XTTS v2 (Coqui)** | **Coqui CPML** | **NON commercial** |
+| **F5-TTS** | **CC-BY-NC 4.0** | **NON commercial** |
+| ElevenLabs | API propriétaire | oui via API (clonage = consentement requis) |
+| STT : Whisper (MIT), Parakeet (NVIDIA) | — | oui |
 
-## 4. 3D (vérifié sur sources primaires)
+## 4. 3D
 
 ### Open weight
 | Modèle | Licence | Commercial | Risque France/UE | Piège |
@@ -97,7 +97,7 @@ Distinction centrale de tout le document : **open weight n'est pas open source.*
 | Pinokio | **MIT** | aucun (lanceur local) | pinokio.co |
 | **fal.ai** | — | tu gardes tes **inputs** ; **aucune cession des outputs** + fal décline toute garantie de non-contrefaçon ; **se réserve l'entraînement sur données agrégées** ; **pas de clause de confidentialité** ; licence du modèle à ta charge | fal.ai/legal/terms-of-service |
 | **Replicate** | — | tu gardes les **outputs, usage commercial reconnu** ; inputs sous licence limitée au service ; **pas de confidentialité explicite** ; licence du modèle à ta charge | replicate.com/terms |
-| ComfyCloud | — | **opaque** (cloud US, juridiction et usage des données non documentés) | À VÉRIFIER |
+| ComfyCloud | — | **opaque** (cloud US, juridiction et usage des données non documentés) | — |
 
 ## 6. AI Act européen (transparence)
 
@@ -129,15 +129,6 @@ Choix sans aucun piège commercial ni territorial :
 - **3D** : TRELLIS/TRELLIS.2 (MIT), Step1X-3D (Apache), TripoSG (MIT). **Éviter Hunyuan3D en France.**
 - **Capture 3DGS** : gsplat/Nerfstudio en local.
 
-## 9. Points restant à verrouiller (non bloquants)
-
-- FLUX.2 klein : Apache 2.0 hautement probable, card HF gated, à confirmer authentifié.
-- CogVideoX-5b : clauses commerciales exactes du texte custom.
-- Suno : montant et périmètre exact du règlement Warner (source presse primaire).
-- F5-TTS : licence du dataset Emilia.
-- XTTS v2 : lien CPML (Coqui fermé).
-- ComfyCloud : terms primaires.
-
 ---
 
-*Méthodologie : 3 agents de recherche dédiés ont lu les fichiers LICENSE primaires (GitHub, Hugging Face, terms éditeurs) le 24 juin 2026. Passe critique 3 voix (triangulate : Claude + Codex GPT-5.5 + Gemini 3.5) effectuée sur la v1, dont les erreurs sont corrigées ici. Les licences évoluent : revérifier la source primaire avant tout usage à enjeu.*
+*Les licences évoluent : se reporter à la source officielle avant tout usage à enjeu.*

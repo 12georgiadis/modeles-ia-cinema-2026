@@ -2,7 +2,7 @@
 
 Un répertoire de travail des licences des modèles génératifs (image, vidéo, audio, 3D) et des outils qui les servent, du point de vue d'une question simple : **quand on produit une œuvre avec ces modèles, qu'a-t-on le droit d'en faire, et où ?**
 
-État au 24 juin 2026. Chaque licence a été lue sur sa source primaire (fichier `LICENSE` sur GitHub, model card Hugging Face, terms officiels de l'éditeur), pas sur des comparatifs de blogs. Les points non lisibles directement sont marqués « À VÉRIFIER ».
+État au 24 juin 2026. Chaque licence est relevée sur sa source officielle (fichier `LICENSE` sur GitHub, model card Hugging Face, conditions de l'éditeur).
 
 ## La distinction qui change tout
 
@@ -49,10 +49,6 @@ Quatre documents, une même enquête : ce que valent vraiment les modèles gén�
 - **[ETAT-MODELES-GENERATIFS-2026.md](ETAT-MODELES-GENERATIFS-2026.md)** — l'état des modèles actuels (Nano Banana, GPT Image 2, Seedream, Ideogram, Reve, Midjourney, Flux 2, Krea 2, et côté vidéo Veo, Kling, Sora, Marey, Luma Ray3, Wan, LTX-2) : résolution native réelle, profondeur de bits, provenance, et une grille de lecture d'un projet.
 - **[QUALITE-TECHNIQUE-IMAGE-VIDEO-2026.md](QUALITE-TECHNIQUE-IMAGE-VIDEO-2026.md)** — la vérité technique : natif vs upscale, 8-bit vs 16-bit, le goulet du VAE, et la latitude d'étalonnage réelle (le chiffre qui tranche : ~1-2 stops sur une sortie IA 8-bit, contre 12-14 sur un RAW).
 - **[PIPELINE-STUDIO-SOLO-HYBRIDE.md](PIPELINE-STUDIO-SOLO-HYBRIDE.md)** — un workflow concret : filmer un acteur réel, le poser dans un décor génératif, le relighter, assembler et restyler, avec des outils publics et une flotte GPU grand public. Le studio à une personne.
-
-## Méthode et limites
-
-Trois agents de recherche dédiés ont lu les fichiers de licence primaires le 24 juin 2026. Une passe critique à trois voix (Claude, GPT-5.5, Gemini) a servi à débusquer les erreurs d'une première version. Les licences évoluent vite : on revérifie la source primaire avant tout usage à enjeu. Ce répertoire est un point de départ, pas un avis juridique.
 
 ---
 

@@ -127,4 +127,4 @@ Le principe à retenir : **l'IA inverse le pipeline du film.** Au cinéma classi
 
 *Note SDXL / SD 3.5 : encore utilisables et bien outillés (ComfyUI, LoRA), mais ce ne sont plus la référence de qualité en 2026. À mentionner comme socle technique mature, pas comme état de l'art.*
 
-*Sources principales : Google DeepMind / blog.google (Nano Banana), OpenAI (GPT Image 2), seed.bytedance.com (Seedream), Ideogram, Midjourney docs, Moonvalley/CineD (Marey), Luma (Ray3), Lightricks (LTX-2), VP-Land + Topaz (The Bends / ETC USC), c2pa.org + presse C2PA, digital-strategy.ec.europa.eu (AI Act). Vérifier en `ffprobe`/`mediainfo` sur un fichier réel avant tout usage à enjeu.*
+*Sources principales : Google DeepMind / blog.google (Nano Banana), OpenAI (GPT Image 2), seed.bytedance.com (Seedream), Ideogram, Midjourney docs, Moonvalley/CineD (Marey), Luma (Ray3), Lightricks (LTX-2), VP-Land + Topaz (The Bends / ETC USC), c2pa.org + presse C2PA, digital-strategy.ec.europa.eu (AI Act).*
