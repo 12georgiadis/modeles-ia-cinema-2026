@@ -55,3 +55,5 @@ Quatre documents, une même enquête : ce que valent vraiment les modèles gén�
 Ismaël Joffroy Chandoutis est artiste et cinéaste. Il travaille le cinéma avec des instruments computationnels et documente ses méthodes en public.
 
 Texte sous licence [CC BY-NC-ND 4.0](LICENSE.md).
+
+Par [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
