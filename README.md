@@ -1,59 +1,63 @@
-# Licences des modèles IA génératifs : open weight n'est pas open source
+**English** · [Français](README.fr.md)
 
-Un répertoire de travail des licences des modèles génératifs (image, vidéo, audio, 3D) et des outils qui les servent, du point de vue d'une question simple : **quand on produit une œuvre avec ces modèles, qu'a-t-on le droit d'en faire, et où ?**
+# Licenses of generative AI models: open weight is not open source
 
-État au 24 juin 2026. Chaque licence est relevée sur sa source officielle (fichier `LICENSE` sur GitHub, model card Hugging Face, conditions de l'éditeur).
+A working repository of licenses for generative models (image, video, audio, 3D) and the tools that serve them, from one simple angle: **when you produce a work with these models, what are you allowed to do with it, and where?**
 
-## La distinction qui change tout
+Status as of June 24, 2026. Each license is checked against its official source (the `LICENSE` file on GitHub, the Hugging Face model card, the publisher's terms).
 
-« Open » recouvre deux choses qu'on confond sans cesse.
+## The distinction that changes everything
 
-- **Open weight** : les poids sont téléchargeables. Cela ne dit rien des droits, ni des données.
-- **Open source** : code, et idéalement données, sous licence libre (Apache 2.0, MIT) qui autorise la modification et le commercial.
+"Open" covers two things that keep getting confused.
 
-Beaucoup de modèles présentés comme « open » sont **open weight sous licence custom restrictive**. On peut télécharger les poids sans avoir le droit de vendre l'œuvre produite. Trois questions à poser, à chaque fois :
+- **Open weight**: the weights are downloadable. This says nothing about rights, or about the data.
+- **Open source**: code, and ideally data, under a free license (Apache 2.0, MIT) that permits modification and commercial use.
 
-1. Puis-je télécharger les poids ?
-2. La licence autorise-t-elle le commercial, **et sur quel territoire** ?
-3. Sur **quelles données** le modèle a-t-il été entraîné, avec quel droit ? La licence du modèle ne purge jamais le droit des données.
+Many models presented as "open" are **open weight under a restrictive custom license**. You can download the weights without having the right to sell the resulting work. Three questions to ask, every time:
 
-## Les pièges, par ordre de gravité
+1. Can I download the weights?
+2. Does the license allow commercial use, **and in which territory**?
+3. On **what data** was the model trained, under what right? A model's license never clears the rights to its training data.
 
-1. **Exclusion territoriale.** La licence Tencent Community (**HunyuanVideo** et **Hunyuan3D**) exclut explicitement l'Union Européenne, le Royaume-Uni et la Corée du Sud de son territoire d'usage. Deux des modèles « open » les plus utilisés au monde sont **juridiquement hors de portée pour un artiste établi en France**. Vérifié sur les deux fichiers de licence.
-2. **Non-commercial déguisé en open.** Poids MusicGen (CC-BY-NC), F5-TTS (CC-BY-NC), XTTS v2 (Coqui CPML), Fish Speech (accord écrit requis), Stable Zero123 : open d'apparence, interdits en commercial.
-3. **Seuils de chiffre d'affaires.** Krea 2, Stable Diffusion 3.5, Stable Audio Open, famille Stability 3D : gratuit en commercial sous **1 M$ de CA annuel**. LTX-2 : sous **10 M$**. Sans objet pour un artiste, à connaître quand même.
-4. **Clauses cachées des licences custom.** Krea 2 impose des filtres de contenu (les retirer rompt la licence) et reste **révocable** à 30 jours. « Open » n'est pas « irrévocable ».
-5. **Propriété n'est pas licence, et le copyright n'est pas garanti.** Suno assigne ses droits aux abonnés payants sans garantir qu'un copyright existe ; le Copyright Office américain refuse de protéger une œuvre 100 % générée par IA. Deux raisons de garder une part humaine décisive dans la chaîne.
-6. **Licences en cascade.** Un code MIT peut dépendre de poids plus restrictifs. On vérifie la chaîne entière, pas seulement le fichier de licence racine.
-7. **Capture en cloud, c'est nourrir une IA tierce.** Téléverser des scans 3D sur Scaniverse ou Luma déclenche une licence perpétuelle d'entraînement. Pour du confidentiel, la reconstruction tourne en local (gsplat, Nerfstudio).
-8. **Les plateformes au compteur reportent la licence sur l'utilisateur.** fal.ai et Replicate laissent la responsabilité de la licence du modèle à l'utilisateur et n'offrent pas de clause de confidentialité ; fal se réserve l'entraînement sur les données agrégées.
+## The traps, in order of severity
 
-## L'AI Act, à sa juste place
+1. **Territorial exclusion.** The Tencent Community license (**HunyuanVideo** and **Hunyuan3D**) explicitly excludes the European Union, the United Kingdom, and South Korea from its territory of use. Two of the most widely used "open" models in the world are **legally out of reach for an artist based in France**. Verified on both license files.
+2. **Non-commercial disguised as open.** MusicGen weights (CC-BY-NC), F5-TTS (CC-BY-NC), XTTS v2 (Coqui CPML), Fish Speech (written agreement required), Stable Zero123: open in appearance, forbidden commercially.
+3. **Revenue thresholds.** Krea 2, Stable Diffusion 3.5, Stable Audio Open, the Stability 3D family: free for commercial use under **$1M annual revenue**. LTX-2: under **$10M**. Irrelevant for an individual artist, but worth knowing.
+4. **Hidden clauses in custom licenses.** Krea 2 imposes content filters (removing them breaks the license) and remains **revocable** on 30 days' notice. "Open" is not "irrevocable."
+5. **Ownership is not a license, and copyright is not guaranteed.** Suno assigns its rights to paying subscribers without guaranteeing that a copyright exists; the US Copyright Office refuses to protect a work that is 100% AI-generated. Two reasons to keep a decisive human share in the chain.
+6. **Cascading licenses.** MIT-licensed code can depend on more restrictive weights. Check the whole chain, not just the root license file.
+7. **Cloud capture means feeding a third-party AI.** Uploading 3D scans to Scaniverse or Luma triggers a perpetual training license. For anything confidential, reconstruction runs locally (gsplat, Nerfstudio).
+8. **Metered platforms pass the license on to the user.** fal.ai and Replicate leave the model's license responsibility with the user and offer no confidentiality clause; fal reserves the right to train on aggregated data.
 
-Les obligations de transparence de l'AI Act (article 50 : marquage des contenus synthétiques, étiquetage des deepfakes) **entrent en vigueur en août 2026**. En juin 2026, elles ne sont donc pas encore exécutoires. Le texte est neutre technologiquement ; C2PA et SynthID sont les standards de référence pour y répondre. Anticiper le marquage est prudent, le présenter comme une obligation actuelle serait faux.
+## The AI Act, in its proper place
 
-## Une base souveraine, sans piège
+The AI Act's transparency obligations (Article 50: labeling synthetic content, tagging deepfakes) **take effect in August 2026**. As of June 2026, they are therefore not yet enforceable. The text is technology-neutral; C2PA and SynthID are the reference standards for complying with it. Anticipating labeling is prudent; presenting it as a current obligation would be false.
 
-Pour produire en France sans contrainte territoriale ni commerciale, les choix propres :
+## A sovereign base, without traps
 
-- **Image** : Qwen-Image, Z-Image, HiDream-I1 (MIT), Sana, FLUX.2 klein.
-- **Vidéo** : Wan 2.2, Mochi 1, CogVideoX-2b (Apache 2.0). On évite HunyuanVideo.
-- **Audio** : ACE-Step, YuE (Apache) ; voix Kokoro, Chatterbox, CosyVoice, Orpheus, Dia, Parler. On évite, en commercial, les poids MusicGen, F5-TTS, XTTS v2, Fish Speech.
-- **3D** : TRELLIS et TRELLIS.2 (MIT), Step1X-3D (Apache), TripoSG (MIT). On évite Hunyuan3D.
+To produce in France with no territorial or commercial constraint, the choices that hold up:
 
-## Le dépôt
+- **Image**: Qwen-Image, Z-Image, HiDream-I1 (MIT), Sana, FLUX.2 klein.
+- **Video**: Wan 2.2, Mochi 1, CogVideoX-2b (Apache 2.0). HunyuanVideo is avoided.
+- **Audio**: ACE-Step, YuE (Apache); voice with Kokoro, Chatterbox, CosyVoice, Orpheus, Dia, Parler. In commercial use, MusicGen, F5-TTS, XTTS v2, and Fish Speech weights are avoided.
+- **3D**: TRELLIS and TRELLIS.2 (MIT), Step1X-3D (Apache), TripoSG (MIT). Hunyuan3D is avoided.
 
-Quatre documents, une même enquête : ce que valent vraiment les modèles génératifs en 2026, ce qu'on a le droit d'en faire, et comment les amener à une qualité cinéma.
+## The repository
 
-- **[CATALOGUE-LICENCES-IA-2026.md](CATALOGUE-LICENCES-IA-2026.md)** — le tableau complet des licences (image, vidéo, audio, 3D, runtimes), par modalité, avec autorisation commerciale, risque territorial, faisabilité locale et source primaire. Plus l'AI Act et les CGU des plateformes cloud.
-- **[ETAT-MODELES-GENERATIFS-2026.md](ETAT-MODELES-GENERATIFS-2026.md)** — l'état des modèles actuels (Nano Banana, GPT Image 2, Seedream, Ideogram, Reve, Midjourney, Flux 2, Krea 2, et côté vidéo Veo, Kling, Sora, Marey, Luma Ray3, Wan, LTX-2) : résolution native réelle, profondeur de bits, provenance, et une grille de lecture d'un projet.
-- **[QUALITE-TECHNIQUE-IMAGE-VIDEO-2026.md](QUALITE-TECHNIQUE-IMAGE-VIDEO-2026.md)** — la vérité technique : natif vs upscale, 8-bit vs 16-bit, le goulet du VAE, et la latitude d'étalonnage réelle (le chiffre qui tranche : ~1-2 stops sur une sortie IA 8-bit, contre 12-14 sur un RAW).
-- **[PIPELINE-STUDIO-SOLO-HYBRIDE.md](PIPELINE-STUDIO-SOLO-HYBRIDE.md)** — un workflow concret : filmer un acteur réel, le poser dans un décor génératif, le relighter, assembler et restyler, avec des outils publics et une flotte GPU grand public. Le studio à une personne.
+Four documents, one investigation: what generative models are actually worth in 2026, what you're allowed to do with them, and how to bring them to cinema quality.
+
+- **[CATALOGUE-LICENCES-IA-2026.md](CATALOGUE-LICENCES-IA-2026.md)** — the complete license table (image, video, audio, 3D, runtimes), by modality, with commercial authorization, territorial risk, local feasibility, and primary source. Plus the AI Act and cloud platforms' terms of service.
+- **[ETAT-MODELES-GENERATIFS-2026.md](ETAT-MODELES-GENERATIFS-2026.md)** — the state of current models (Nano Banana, GPT Image 2, Seedream, Ideogram, Reve, Midjourney, Flux 2, Krea 2, and on the video side Veo, Kling, Sora, Marey, Luma Ray3, Wan, LTX-2): real native resolution, bit depth, provenance, and a reading grid for a project.
+- **[QUALITE-TECHNIQUE-IMAGE-VIDEO-2026.md](QUALITE-TECHNIQUE-IMAGE-VIDEO-2026.md)** — the technical truth: native vs. upscaled, 8-bit vs. 16-bit, the VAE bottleneck, and real grading latitude (the number that settles it: ~1-2 stops on an 8-bit AI output, versus 12-14 on a RAW).
+- **[PIPELINE-STUDIO-SOLO-HYBRIDE.md](PIPELINE-STUDIO-SOLO-HYBRIDE.md)** — a concrete workflow: filming a real actor, placing them in a generative set, relighting, compositing and restyling, with public tools and a consumer-grade GPU fleet. The one-person studio.
+
+Note: the four linked documents above remain in French, the language in which the underlying research was conducted.
 
 ---
 
-Ismaël Joffroy Chandoutis est artiste et cinéaste. Il travaille le cinéma avec des instruments computationnels et documente ses méthodes en public.
+Ismaël Joffroy Chandoutis is an artist and filmmaker. He works cinema with computational instruments and documents his methods in public.
 
-Texte sous licence [CC BY-NC-ND 4.0](LICENSE.md).
+Text licensed under [CC BY-NC-ND 4.0](LICENSE.md).
 
-Par [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
+By [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
